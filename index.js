@@ -29,6 +29,7 @@ const express = require('express');
 const http = require('http');
 const app = express();
 const port = process.env.PORT || 3000;
+const publicRun = process.argv[2];
 
 app.use(express.static('public'));
 
@@ -41,7 +42,7 @@ app.get('/', (req, res) => {
 });
 
 const server = http.createServer(app);
-server.listen(port);
+(!publicRun == "public") ? server.listen(port) : server.listen(port, '0.0.0.0');
 
 const parser = require('ua-parser-js');
 const { uniqueNamesGenerator, animals, colors } = require('unique-names-generator');
