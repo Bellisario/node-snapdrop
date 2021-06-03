@@ -292,6 +292,8 @@ class ReceiveDialog extends Dialog {
     }
 
     hide() {
+        this.$el.querySelector('.preview').style.visibility = 'hidden';
+        this.$el.querySelector("#img-preview").src = "";
         super.hide();
         this._dequeueFile();
     }
