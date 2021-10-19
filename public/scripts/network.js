@@ -58,7 +58,7 @@ class ServerConnection {
         // hack to detect if deployment or development environment
         const protocol = location.protocol.startsWith('https') ? 'wss' : 'ws';
         const webrtc = window.isRtcSupported ? '/webrtc' : '/fallback';
-        const url = protocol + '://' + location.host + webrtc;
+        const url = protocol + '://' + location.host + location.pathname + 'server' + webrtc;
         return url;
     }
 
@@ -186,6 +186,8 @@ class Peer {
     }
 
     _onChunkReceived(chunk) {
+        if(!chunk.byteLength) return;
+        
         this._digester.unchunk(chunk);
         const progress = this._digester.progress;
         this._onDownloadProgress(progress);
@@ -463,7 +465,7 @@ class FileChunker {
     }
 
     isFileEnd() {
-        return this._offset > this._file.size;
+        return this._offset >= this._file.size;
     }
 
     get progress() {
@@ -487,6 +489,8 @@ class FileDigester {
         this._bytesReceived += chunk.byteLength || chunk.size;
         const totalChunks = this._buffer.length;
         this.progress = this._bytesReceived / this._size;
+        if (isNaN(this.progress)) this.progress = 1
+
         if (this._bytesReceived < this._size) return;
         // we are done
         let blob = new Blob(this._buffer, { type: this._mime });
