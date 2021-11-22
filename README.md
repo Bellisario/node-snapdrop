@@ -9,6 +9,6 @@ Download the repository in a folder, cd it, install all dependencies with `npm i
 Use this command, instead, to run not locally but in your public "sharable" ip: `node index.js public`.\
 Make sure to check your ip address using your OS command.
 
-### Run on LAN:
+### Run within your LAN:
 `node index.js LAN`
 Use this comment, instead, to run when server & clients are on the same LAN so that clients are able to discover each other.
