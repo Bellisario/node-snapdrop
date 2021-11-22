@@ -152,7 +152,7 @@ class SnapdropServer {
         });
 
         // add peer to room
-        this._rooms[peer.ip][peerId] = peer;
+        this._rooms[peerIp][peerId] = peer;
     }
 
     _leaveRoom(peer) {
