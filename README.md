@@ -6,3 +6,6 @@ Download the repository in a folder, cd it, install all dependencies with `npm i
 ### Run within your ip
 Use this command, instead, to run not locally but in your public "sharable" ip: `node index.js public`.\
 Make sure to check your ip address using your OS command.
+
+## How to contribute
+Feel free to [open an issue](https://github.com/Bellisario/node-snapdrop/issues/new/choose) or a [pull request](https://github.com/Bellisario/node-snapdrop/pulls) but follow [Contributing Guidelines](https://github.com/Bellisario/node-snapdrop/blob/main/CONTRIBUTING.md).
