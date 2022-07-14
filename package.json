@@ -5,13 +5,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"start": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-rate-limit": "^6.4.0",
     "ua-parser-js": "^1.0.2",
     "unique-names-generator": "^4.3.0",
     "ws": "^8.8.0"
