@@ -1,4 +1,4 @@
-# node-snapdrop
+# node-snapdrop [![CodeQL](https://github.com/Bellisario/node-snapdrop/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Bellisario/node-snapdrop/actions/workflows/codeql-analysis.yml)
 Just the original [Snapdrop](https://github.com/RobinLinus/Snapdrop), with complete Node.js server.
 
 ## How to run
