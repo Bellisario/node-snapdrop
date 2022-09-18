@@ -1,6 +1,10 @@
 # node-snapdrop [![CodeQL](https://github.com/Bellisario/node-snapdrop/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Bellisario/node-snapdrop/actions/workflows/codeql-analysis.yml)
 Just the original [Snapdrop](https://github.com/RobinLinus/Snapdrop), with complete Node.js server.
 
+> **Warning**\
+> Due to [Heroku Free Plan Shutdown](https://github.com/Bellisario/node-snapdrop/issues/15), node-snapdrop server has changed and can now be reached [here](https://node-snapdrop.onrender.com).\
+> Old server will be kept (without any code update) until November 28, 2022, then it will be shutdown by Heroku.
+
 ## How to run
 Download the repository in a folder, cd it, install all dependencies with `npm i` and use this command: `node index.js`.
 ### Run within your ip
