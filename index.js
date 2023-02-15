@@ -43,6 +43,10 @@ const publicRun = process.argv[2];
 
 app.use(limiter);
 
+// ensure correct client ip and not the ip of the reverse proxy is used for rate limiting on render.com
+// see https://github.com/express-rate-limit/express-rate-limit#troubleshooting-proxy-issues
+app.set('trust proxy', 5);
+
 app.use(express.static('public'));
 
 app.use(function(req, res) {
