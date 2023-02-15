@@ -43,6 +43,10 @@ const publicRun = process.argv[2];
 
 app.use(limiter);
 
+// ensure correct client ip and not the ip of the reverse proxy is used for rate limiting on render.com
+// see https://github.com/express-rate-limit/express-rate-limit#troubleshooting-proxy-issues
+app.set('trust proxy', 5);
+
 app.use(express.static('public'));
 
 app.use(function(req, res) {
@@ -54,7 +58,12 @@ app.get('/', (req, res) => {
 });
 
 const server = http.createServer(app);
-(!publicRun == "public") ? server.listen(port) : server.listen(port, '0.0.0.0');
+
+if (publicRun == 'public') {
+    server.listen(port);
+} else {
+    server.listen(port, '127.0.0.1');
+}
 
 const parser = require('ua-parser-js');
 const { uniqueNamesGenerator, animals, colors } = require('unique-names-generator');
