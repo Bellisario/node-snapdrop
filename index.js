@@ -54,7 +54,12 @@ app.get('/', (req, res) => {
 });
 
 const server = http.createServer(app);
-(!publicRun == "public") ? server.listen(port) : server.listen(port, '0.0.0.0');
+
+if (publicRun == 'public') {
+    server.listen(port);
+} else {
+    server.listen(port, '127.0.0.1');
+}
 
 const parser = require('ua-parser-js');
 const { uniqueNamesGenerator, animals, colors } = require('unique-names-generator');
