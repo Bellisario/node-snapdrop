@@ -53,10 +53,6 @@ app.use(function(req, res) {
     res.redirect('/');
 });
 
-app.get('/', (req, res) => {
-	res.sendFile('index.html');
-});
-
 const server = http.createServer(app);
 
 if (publicRun == 'public') {
