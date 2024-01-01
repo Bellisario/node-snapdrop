@@ -2,10 +2,6 @@
 
 Just the original [Snapdrop](https://github.com/RobinLinus/Snapdrop), with complete Node.js server.
 
-> **Warning**\
-> Due to [Heroku Free Plan Shutdown](https://github.com/Bellisario/node-snapdrop/issues/15), node-snapdrop server has changed and can now be reached [here](https://node-snapdrop.onrender.com).\
-> Old server will be kept (without any code update) until November 28, 2022, then it will be shutdown by Heroku.
-
 ## Getting started
 
 To get started, clone and cd the repo:
@@ -34,8 +30,16 @@ If you want to run in your public "sharable" IP instead of locally, you can use 
 node index.js public
 ```
 
+> [!TIP]
 > Remember to check your IP Address using your OS command to see where you can access the server.
 
-## How to contribute
+## Contributing
 
-Feel free to [open an issue](https://github.com/Bellisario/node-snapdrop/issues/new/choose) or a [pull request](https://github.com/Bellisario/node-snapdrop/pulls) but follow [Contributing Guidelines](https://github.com/Bellisario/node-snapdrop/blob/main/CONTRIBUTING.md).
+We :heart: contributions!\
+Feel free to open an [issue](https://github.com/Bellisario/node-snapdrop/issues) or a [pull request](https://github.com/Bellisario/node-snapdrop/pulls) but follow [Contributing Guidelines](https://github.com/Bellisario/node-snapdrop/blob/main/CONTRIBUTING.md).
+
+> If you don't know where to start, check out the [help wanted issues](https://github.com/Bellisario/node-snapdrop/labels/help%20wanted)!
+
+## License
+
+GPL-3.0 License [here](https://github.com/Bellisario/node-snapdrop/blob/main/LICENSE).
