@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
+    "express": "^4.18.3",
     "express-rate-limit": "^7.1.5",
     "ua-parser-js": "^1.0.37",
     "unique-names-generator": "^4.3.0",
