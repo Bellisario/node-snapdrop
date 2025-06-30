@@ -18,6 +18,6 @@
     "express-rate-limit": "^7.5.1",
     "ua-parser-js": "^2.0.4",
     "unique-names-generator": "^4.3.0",
-    "ws": "^8.18.2"
+    "ws": "^8.18.3"
   }
 }
