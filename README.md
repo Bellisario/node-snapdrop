@@ -1,6 +1,11 @@
 # node-snapdrop [![CodeQL](https://github.com/Bellisario/node-snapdrop/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Bellisario/node-snapdrop/actions/workflows/codeql-analysis.yml)
 
-Just the original [Snapdrop](https://github.com/RobinLinus/Snapdrop), with complete Node.js server.
+Just the original Snapdrop, with complete Node.js server.
+
+> [!NOTE]
+> We do not endorse any recent changes made to the original Snapdrop, sold to LimeWire & [considered badware](https://github.com/uBlockOrigin/uAssets/issues/27172) by uBlock Origin, so we removed all the links referring to it.\
+> \
+> This repository acts as a pre-LimeWire & Node.js version of the good old Snapdrop.
 
 ## Getting started
 
