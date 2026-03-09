@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.2.1",
-    "express-rate-limit": "^8.2.2",
+    "express-rate-limit": "^8.3.0",
     "ua-parser-js": "^2.0.9",
     "unique-names-generator": "^4.3.0",
     "ws": "^8.19.0"
