@@ -232,7 +232,7 @@ class Peer {
 
     _setIP(request) {
         if (request.headers['x-forwarded-for']) {
-            this.ip = request.headers['x-forwarded-for'].split(/\s*,\s*/)[0];
+            this.ip = request.headers['x-forwarded-for'].split(',')[0].trim();
         } else {
             this.ip = request.connection.remoteAddress;
         }
